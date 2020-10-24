@@ -18,7 +18,7 @@ allprojects {
 ```
 dependencies {
     ...
-    implementation 'com.baiyuas:Mp3Record:1.0.0'
+    implementation 'com.baiyuas:Mp3Record:1.0.2'
     ...
 }
 ```
@@ -52,5 +52,13 @@ record.stop();
 // 释放资源
 record.release();
 ```
+
+注：
+在开发过程中，当工程中引用了三方的so文件时候，gradle插件版本4.0.0以下的建议将三方so文件放在main/src/jniLibs目录下
+
+如果有需要将库上传到jcenter的，gradle插件建议使用3.5.3，高版本目前还没有兼容适配
+
+ *** 1.0.2 ***
+ 1. 解决了mp3录音库找不到库的问题
 
 学习自[LameMp3ForAndroid](https://github.com/clam314/LameMp3ForAndroid)
