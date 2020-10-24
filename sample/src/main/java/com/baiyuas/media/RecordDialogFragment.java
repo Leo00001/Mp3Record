@@ -91,7 +91,6 @@ public class RecordDialogFragment extends BaseDialogFragment {
      * 准备录音
      */
     private void readyRecord() {
-        FileUtils.deleteFile(FileUtils.getFilePath());
         record();
     }
 

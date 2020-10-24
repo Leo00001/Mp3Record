@@ -36,9 +36,9 @@ dependencies {
 
     // 录音
     implementation 'com.baiyuas:Mp3Record:1.0.2'
-    //implementation project(path: ':Mp3Record')
     // 权限
     implementation 'pub.devrel:easypermissions:3.0.0'
     // 卡片式阴影效果
     implementation 'org.linwg1988:lcardview:1.3'
+    implementation 'com.google.android:flexbox:2.0.1'
 }

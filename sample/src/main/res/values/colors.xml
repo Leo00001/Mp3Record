@@ -8,6 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="bg">#F8F9FA</color>
+    <color name="record_btn_bg">#FF8318</color>
+    <color name="record_bg">#3162E4</color>
+    <color name="txt_color">#3E6CE7</color>
     <color name="colorAccent">#FF4081</color>
     <color name="color_333333">#333333</color>
     <color name="gray_9b9b9b">#9B9B9B</color>

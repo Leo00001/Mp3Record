@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import com.baiyuas.media.App;
 
 import java.io.File;
+import java.util.Objects;
 
 /**
  * author: rivenlee
@@ -24,6 +25,14 @@ public class FileUtils {
         File file = new File(filename);
         filePath = null;
         return file.exists() && file.delete();
+    }
+
+    public static void clear() {
+        if (cacheDir.listFiles() != null && Objects.requireNonNull(cacheDir.listFiles()).length > 0) {
+            for (File f : Objects.requireNonNull(Objects.requireNonNull(cacheDir.listFiles())[0].listFiles())) {
+                deleteFile(f.getAbsolutePath());
+            }
+        }
     }
 
     /**
