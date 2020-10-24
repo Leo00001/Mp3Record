@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_top"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_global_broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/record"
+        android:textColor="#333"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_record_time"
+        android:layout_below="@id/tv_global_broadcast"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/start_record"
+        android:textColor="#333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wave_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/reset_time"
+        android:textColor="#333"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_start_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_record_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_red_24px"
+        android:paddingLeft="22dp"
+        android:paddingTop="11dp"
+        android:paddingRight="22dp"
+        android:paddingBottom="11dp"
+        android:text="@string/long_press_record"
+        android:textColor="#FFF"
+        android:textSize="16sp" />
+
+    <com.baiyuas.media.view.WaveView
+        android:id="@+id/wave_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_global_broadcast"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="40dp"
+        android:visibility="invisible"
+        app:baselineColor="#0000"
+        app:space="10dp"
+        app:waveColor="#d0021b"
+        app:waveStokeWidth="4dp" />
+
+</RelativeLayout>
