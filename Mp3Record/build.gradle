@@ -9,7 +9,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
-        versionName "1.0.0"
+        versionName "1.0.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -21,15 +21,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     externalNativeBuild {
         cmake {
-            path file('CMakeLists.txt')
+            path file('src/main/cpp/CMakeLists.txt')
         }
     }
+
     ndkVersion '21.3.6528147'
 
     lintOptions {
@@ -51,7 +54,7 @@ publish {
     userOrg = 'baiyuas'
     groupId = 'com.baiyuas'
     artifactId = 'Mp3Record'
-    publishVersion = '1.0.0'
-    desc = 'record mp3'
+    publishVersion = '1.0.2'
+    desc = 'fixed can not find lame.so'
     website = 'https://github.com/Leo00001/Mp3Record'
 }

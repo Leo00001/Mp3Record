@@ -6,7 +6,7 @@
 #include<android/log.h>
 #include <cstdio>
 #include "sstream"
-#include <lame/lame.h>
+#include <lame.h>
 
 #define LOG_TAG "System.out.c"
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
