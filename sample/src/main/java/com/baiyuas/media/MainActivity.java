@@ -137,12 +137,17 @@ public class MainActivity extends AppCompatActivity
 
         @Override
         public void onClick(View v) {
+            for (PlayClick playClick : playClickList) {
+                playClick.reset();
+            }
+            FileUtils.deleteFile(playClickList.get(index).path);
             closeClickList.remove(index);
             playClickList.remove(index);
             viewGroup.removeViewAt(index);
             for (int i = 0; i < playClickList.size(); i++) {
                 closeClickList.get(i).updateIndex(i);
             }
+
         }
 
         public void updateIndex(int i) {
