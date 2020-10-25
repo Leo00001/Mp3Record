@@ -1,17 +1,8 @@
+[ ![Download](https://api.bintray.com/packages/baiyuas/maven/Mp3Record/images/download.svg?version=1.0.2) ](https://bintray.com/baiyuas/maven/Mp3Record/1.0.2/link)
+
 ## Mp3录音
 
 ### 引用
-
-引用在工程的`build.gradle`中增加
-
-```
-allprojects {
-    repositories {
-        ...
-        maven {url "https://dl.bintray.com/baiyuas/maven"}
-    }
-}
-```
 
 在module的`build.gradle`增加依赖
 
